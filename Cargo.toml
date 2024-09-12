@@ -1,0 +1,20 @@
+[package]
+name = "notification"
+version = "0.1.0"
+edition = "2021"
+authors = ["Shine"]
+
+[dependencies]
+axum = "0.7.5"
+tokio = { version = "*", features = ["full"] }
+serde ={ version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+reqwest = { version = "0.12.7", features = ["json"] }
+log = { version = "0.4.14", features = ["std", "serde"] }
+env_logger = "0.11.5"
+dotenvy = { version = "0.15.0", features = ["cli"] }
+frankenstein = { version = "0.33", default-features = false, features = ["async-http-client", "async-telegram-trait"] }
+thiserror = "1.0.63"
+typed-builder = "0.20.0"
+fang = { version="0.10" , features = ["asynk"], default-features = false }
+tokio-stream = "0.1.16"
